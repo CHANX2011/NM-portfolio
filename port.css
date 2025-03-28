@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, black, red);
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    color: #ffdd57; /* Light Yellow for contrast */
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to right, black, red);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Section Content */
+.section-content {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Section Titles */
+h2 {
+    color: #d32f2f; /* Dark Red */
+}
+
+/* About Me Section */
+#about p {
+    color: #0077cc; /* Blue */
+}
+
+/* Education Section */
+#education p {
+    color: #009688; /* Teal */
+    font-weight: bold;
+}
+
+/* Skills Section */
+#skills ul {
+    color: #673ab7; /* Purple */
+    font-weight: bold;
+}
+
+/* Projects Section */
+#projects a {
+    color: #e91e63; /* Pink */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Button */
+.download-button {
+    display: inline-block;
+    background: linear-gradient(to right, black, red);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    max-width: 90%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, black, red);
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .download-button {
+        width: 80%;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+
+    .header-content p {
+        font-size: 1em;
+    }
+}
+
